@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Gilroy-Bold";
+    src: url('./fonts/GilroyBold.ttf');
+}
+
+@font-face {
+    font-family: "Gilroy-Semibold";
+    src: url('./fonts/GilroySemiBold.ttf')
+}
+
+@font-face {
+    font-family: "Gilroy-Medium";
+    src: url('./fonts/GilroyMedium.ttf');
+}
+
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: #FFF;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.title {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 500px;
+}
+
+.title__image {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 14px;
+}
+
+
+.title__image__text {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #000;
+    font-family: "Gilroy-Bold";
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.title__image__text_colored {
+    color: #F25822;
+}
+
+.title__menu {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title__menu_link_home {
+    color: #F25822;
+    font-family: "Gilroy-SemiBold";
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.title__menu_link {
+    color: #000;
+    font-family: "Gilroy-Medium";
+    font-size: 14px;
+    font-weight: 400;
+}
+
+summary {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+summary::after {
+    content: url("./images/angle-arrow-down.svg");
+}
+
+details[open]>summary::after {
+    content: url("./images/angle-arrow-up.svg");
+}
+
+.content {
+    padding-top: 84px;
+    padding-bottom: 162px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 41px;
+}
+
+
+.content__main__text {
+    margin-bottom: 37px;
+}
+
+.content__main__text__top {
+    margin-bottom: 17px;
+}
+
+.h1_index {
+    color: #000;
+    font-family: "Gilroy-Bold";
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.paragraph {
+    color: #888;
+    font-family: "Gilroy-Medium";
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.content__main__buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 36px;
+}
+
+.content__main__button_left {
+    padding: 15px 35px;
+    border-radius: 50px;
+    border: none;
+    background: #F25822;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+    color: #FFF;
+    font-family: "Gilroy-Bold";
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.content__main__button_right {
+    padding-top: 15px;
+    padding-bottom: 16px;
+    color: #AAAAAA;
+    font-family: "Gilroy-Bold";
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+
+.logos {
+    padding-top: 97px;
+    padding-bottom: 97px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 48px;
+
+}
